@@ -1,3 +1,4 @@
+docs/
 // Scroll reveal
 const reveals = document.querySelectorAll('section, .card, .arch-card, .hw-item, .tl-item, .err-card, .df-item, .stat-block');
 
