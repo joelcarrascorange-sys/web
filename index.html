@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Untitled</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <nav id="navbar">
+  <div class="nav-logo">ALBEGESTIO</div>
+  <ul class="nav-links">
+    <li><a href="#hero">Inicio</a></li>
+    <li><a href="#sistema">Sistema</a></li>
+    <li><a href="#arquitectura">Arquitectura</a></li>
+    <li><a href="#hardware">Hardware</a></li>
+    <li><a href="#flujo">Flujo</a></li>
+    <li><a href="#dashboard">Dashboard</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="grid-bg"></div>
+  <div class="hero-content">
+    <div class="hero-year">2026</div>
+    <h1>SOUVENIR<br><span class="accent">RANDOMIZER</span></h1>
+    <p class="hero-sub">Punto de venta autónomo de coleccionables<br>con dispensación aleatoria e integración NFC/EMV</p>
+    <a href="#sistema" class="cta-btn">Explorar el sistema ↓</a>
+  </div>
+  <div class="hero-machine">
+  <img src="https://cdn.jsdelivr.net/gh/joelcarrascorange-sys/images_machine@main/Souvenir%20Randomizer%20Machine.png"
+       alt="Albegestio Machine"
+       class="hero-img">
+</div>
+<img src="https://cdn.jsdelivr.net/gh/joelcarrascorange-sys/images_machine@main/Souvenir%20Randomizer%20Machine.png"
+     alt="Albegestio Machine - Vista técnica"
+     class="section-img">
+</section>
+
+<!-- VISIÓN GENERAL -->
+<section id="sistema">
+  <div class="section-label">01 — VISIÓN GENERAL</div>
+  <h2>El Sistema <span class="accent">Albegestio</span></h2>
+  <p class="section-desc">Punto de venta autónomo que dispensa coleccionables mediante pago electrónico. Integra componentes de última generación para una experiencia fluida y segura.</p>
+  <div class="cards-grid">
+    <div class="card">
+      <div class="card-icon">⬛</div>
+      <h3>Interfaz táctil 7"</h3>
+      <p>Modo kiosko con animaciones fluidas y guía visual paso a paso para el usuario.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">◈</div>
+      <h3>Ingenico Self 5000</h3>
+      <p>Terminal NFC/EMV con certificación PCI-DSS delegada. Pago seguro sin acceso de la Pi a datos bancarios.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">⟳</div>
+      <h3>Husillo Archimedes 3D</h3>
+      <p>Mecanismo de dispensación de precisión con sensor IR de confirmación y reintentos automáticos.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">◉</div>
+      <h3>Raspberry Pi 4B</h3>
+      <p>Unidad de control ejecutando Node.js modular. Mínimo 2GB RAM, recomendado 4GB.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ESTRATEGIA GACHAPON -->
+<section id="gachapon" class="dark-section">
+  <div class="section-label">02 — ESTRATEGIA</div>
+  <h2>El poder de la <span class="accent">aleatoriedad</span></h2>
+  <p class="section-desc">Reemplazar "selección" por "descubrimiento" impulsa la frecuencia de compra. El factor sorpresa activa el coleccionismo impulsivo.</p>
+  <div class="stats-row">
+    <div class="stat-block">
+      <div class="stat-num">1×</div>
+      <div class="stat-label">Venta directa<br>por visita</div>
+    </div>
+    <div class="stat-arrow">→</div>
+    <div class="stat-block accent-stat">
+      <div class="stat-num">4.2×</div>
+      <div class="stat-label">Modelo Gachapon<br>por visita</div>
+    </div>
+  </div>
+</section>
+
+<!-- ARQUITECTURA -->
+<section id="arquitectura">
+  <div class="section-label">03 — ARQUITECTURA MODULAR</div>
+  <h2>Tres módulos, <span class="accent">un sistema</span></h2>
+  <div class="arch-grid">
+    <div class="arch-card">
+      <div class="arch-num">01</div>
+      <h3>SERVER / UI</h3>
+      <ul>
+        <li>Express + WebSockets</li>
+        <li>Interfaz reactiva</li>
+        <li>Tiempo real</li>
+      </ul>
+    </div>
+    <div class="arch-connector">⟶</div>
+    <div class="arch-card arch-center">
+      <div class="arch-num">02</div>
+      <h3>MACHINE LOGIC</h3>
+      <ul>
+        <li>Máquina de estados</li>
+        <li>Control robusto</li>
+        <li>Terminal y dispensador</li>
+      </ul>
+    </div>
+    <div class="arch-connector">⟶</div>
+    <div class="arch-card">
+      <div class="arch-num">03</div>
+      <h3>DISPENSER CORE</h3>
+      <ul>
+        <li>Detección GPIO auto</li>
+        <li>Modo simulación</li>
+        <li>Módulo independiente</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- HARDWARE -->
+<section id="hardware" class="dark-section">
+  <div class="section-label">04 — HARDWARE</div>
+  <h2>Componentes <span class="accent">esenciales</span></h2>
+  <div class="hw-list">
+    <div class="hw-item">
+      <div class="hw-dot"></div>
+      <div class="hw-text">
+        <strong>Raspberry Pi 4B</strong>
+        <span>Mínimo 2GB RAM · Recomendado 4GB</span>
+      </div>
+    </div>
+    <div class="hw-item">
+      <div class="hw-dot"></div>
+      <div class="hw-text">
+        <strong>Fuentes duales aisladas</strong>
+        <span>12V 5A para servo · 5V 3A para Pi</span>
+      </div>
+    </div>
+    <div class="hw-item">
+      <div class="hw-dot"></div>
+      <div class="hw-text">
+        <strong>Sensor ITR9608 horquilla</strong>
+        <span>Digital · Salida LOW · Confirmación dispensación</span>
+      </div>
+    </div>
+    <div class="hw-item">
+      <div class="hw-dot"></div>
+      <div class="hw-text">
+        <strong>Servo MG996R</strong>
+        <span>Modificado para rotación continua</span>
+      </div>
+    </div>
+    <div class="hw-item">
+      <div class="hw-dot"></div>
+      <div class="hw-text">
+        <strong>Terminal Ingenico Self 5000</strong>
+        <span>NFC/EMV · Protocolo SPDH vía USB</span>
+      </div>
+    </div>
+  </div>
+  <div class="precision-row">
+    <div class="precision-block">
+      <div class="precision-num">300<span>ms</span></div>
+      <div class="precision-label">Período ciego inicial</div>
+    </div>
+    <div class="precision-block">
+      <div class="precision-num">80<span>ms</span></div>
+      <div class="precision-label">Retardo post-detección</div>
+    </div>
+  </div>
+</section>
+
+<!-- FLUJO DE VENTA -->
+<section id="flujo">
+  <div class="section-label">05 — FLUJO DE VENTA</div>
+  <h2>Timeline <span class="accent">completo</span></h2>
+  <div class="timeline">
+    <div class="tl-item">
+      <div class="tl-time">T+0.0s</div>
+      <div class="tl-dot"></div>
+      <div class="tl-text">Usuario presiona <strong>"Obtener"</strong> en pantalla táctil</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-time">T+0.5s</div>
+      <div class="tl-dot"></div>
+      <div class="tl-text">Raspberry Pi activa pago en <strong>terminal Self 5000</strong></div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-time">T+Xs</div>
+      <div class="tl-dot"></div>
+      <div class="tl-text">Banco autoriza transacción <strong>(código "00")</strong></div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-time">T+X.1s</div>
+      <div class="tl-dot"></div>
+      <div class="tl-text">Servo activa el <strong>husillo dispensador</strong></div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-time">T+X.5s</div>
+      <div class="tl-dot accent-dot"></div>
+      <div class="tl-text">Sensor IR confirma <strong>artículo dispensado ✓</strong></div>
+    </div>
+  </div>
+</section>
+
+<!-- ERRORES -->
+<section id="errores" class="dark-section">
+  <div class="section-label">06 — RECUPERACIÓN</div>
+  <h2>Protocolos de <span class="accent">error</span></h2>
+  <div class="err-grid">
+    <div class="err-card">
+      <div class="err-tag">TIMEOUT</div>
+      <p>Pago sin respuesta → Revert a IDLE tras <strong>30s</strong></p>
+    </div>
+    <div class="err-card">
+      <div class="err-tag">WEBSOCKET</div>
+      <p>Pérdida de conexión → Reconexión automática en <strong>3s</strong></p>
+    </div>
+    <div class="err-card">
+      <div class="err-tag">DISPENSACIÓN</div>
+      <p>Fallo de mecanismo → Log + alerta + <strong>reembolso</strong></p>
+    </div>
+    <div class="err-card">
+      <div class="err-tag">SIN SENSOR IR</div>
+      <p>2 reintentos automáticos → Bloqueo de <strong>seguridad</strong></p>
+    </div>
+  </div>
+</section>
+
+<!-- DASHBOARD -->
+<section id="dashboard">
+  <div class="section-label">07 — GESTIÓN DE FLOTAS</div>
+  <h2>Red inteligente <span class="accent">conectada</span></h2>
+  <p class="section-desc">Albegestio no es solo una máquina. Arquitectura basada en JSON para integración con dashboards remotos y gestión centralizada de cientos de unidades.</p>
+  <div class="dashboard-features">
+    <div class="df-item">
+      <div class="df-icon">◈</div>
+      <div>
+        <strong>Monitoreo en tiempo real</strong>
+        <p>Stock, ventas y estado técnico desde una única interfaz</p>
+      </div>
+    </div>
+    <div class="df-item">
+      <div class="df-icon">◈</div>
+      <div>
+        <strong>Alertas de reposición automáticas</strong>
+        <p>Inventario centralizado con notificaciones inteligentes</p>
+      </div>
+    </div>
+    <div class="df-item">
+      <div class="df-icon">◈</div>
+      <div>
+        <strong>Métricas por ubicación</strong>
+        <p>Análisis de rendimiento y ventas por punto de venta</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">ALBEGESTIO MACHINE</div>
+  <div class="footer-links">
+    <a href="#">@albegestio</a>
+    <a href="#">www.raspberrypi.com</a>
+  </div>
+  <div class="footer-copy">2026 · Souvenir Randomizer Machine</div>
+</footer>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>
