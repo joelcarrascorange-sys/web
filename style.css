@@ -151,12 +151,14 @@ body {
 }
 
 .hero-img {
-  width: 520px;
-  max-width: 45vw;
+  width: 480px;
+  max-width: 42vw;
+  height: auto;
   border-radius: 16px;
   border: 1px solid var(--blue-dim);
   box-shadow: 0 0 60px rgba(10,240,255,0.12);
   animation: pulse 4s ease-in-out infinite;
+  object-fit: cover;
 }
 
 /* SECTIONS */
