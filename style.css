@@ -160,6 +160,16 @@ body {
   animation: pulse 4s ease-in-out infinite;
   object-fit: cover;
 }
+#hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8rem 4rem 4rem;
+  position: relative;
+  overflow: hidden;
+  gap: 2rem;
+}
 
 /* SECTIONS */
 section {
